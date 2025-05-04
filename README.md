@@ -13,7 +13,17 @@ Ce projet est un tableau de bord interactif développé avec Streamlit permettan
 ### Installation
 
 ```bash
-git clone https://github.com/ton_nom/dashboard-dentaire.git
+git clone https://github.com/Ray-7777777/dashboard-dentaire.git
 cd dashboard-dentaire
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run dashboard.py
+```
+
+L'application devrait s'ouvrir automatiquement dans votre navigateur à l'adresse :
+http://localhost:8501
+
+### Configuration
+Placez votre fichier de données CSV dans le dossier racine et modifiez le nom dans dashboard.py ligne 507 si nécessaire :
+
+python
+dashboard = DentalTreatmentDashboard("votre_fichier.csv")
